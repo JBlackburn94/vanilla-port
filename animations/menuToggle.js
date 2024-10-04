@@ -3,6 +3,7 @@ import gsap from "gsap";
 const menuToggle = () => {
   const menu = document.getElementById("menu");
   const mobileMenu = document.getElementById("mobile-menu");
+  const contact = document.querySelector(".contact-container");
   const body = document.body;
   let isOpen = false;
 
@@ -12,7 +13,8 @@ const menuToggle = () => {
     if (!isOpen) {
       gsap.set(mobileMenu, { display: "block" });
       gsap.fromTo(mobileMenu, { opacity: 0 }, { opacity: 1, duration: 0.3 });
-      body.classList.add("no-scroll");
+      gsap.from(contact, { opacity: 0, duration: 0.4, delay: 0.3 }),
+        body.classList.add("no-scroll");
     } else {
       gsap.to(mobileMenu, {
         opacity: 0,

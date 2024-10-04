@@ -4,7 +4,7 @@ import logoAnimation from "./animations/logoAnimation";
 import menuButtonAnimation from "./animations/menuButtonAnimation";
 import menuToggle from "./animations/menuToggle";
 import menuIconAnimations from "./animations/menuIconAnimations";
-import menuTextAnimation from "./animations/menuTextAnimation";
+import menuOpen from "./animations/menuTextAnimation";
 
 createIcons({
   icons: {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   menuButtonAnimation();
   menuToggle();
   menuIconAnimations();
-  menuTextAnimation();
+  menuOpen();
 
   const heading = [
     {
