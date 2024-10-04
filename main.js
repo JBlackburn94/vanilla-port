@@ -3,6 +3,8 @@ import { createIcons, Menu } from "lucide";
 import logoAnimation from "./animations/logoAnimation";
 import menuButtonAnimation from "./animations/menuButtonAnimation";
 import menuToggle from "./animations/menuToggle";
+import menuIconAnimations from "./animations/menuIconAnimations";
+import menuTextAnimation from "./animations/menuTextAnimation";
 
 createIcons({
   icons: {
@@ -14,33 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
   logoAnimation();
   menuButtonAnimation();
   menuToggle();
-
-  const links = [
-    {
-      name: "What We Do",
-      url: "#",
-    },
-    {
-      name: "Why We Do It",
-      url: "#",
-    },
-    {
-      name: "Who We Work With",
-      url: "#",
-    },
-    {
-      name: "Insights",
-      url: "#",
-    },
-    {
-      name: "Join Our Team",
-      url: "#",
-    },
-    {
-      name: "Get In Touch",
-      url: "#",
-    },
-  ];
+  menuIconAnimations();
+  menuTextAnimation();
 
   const heading = [
     {
