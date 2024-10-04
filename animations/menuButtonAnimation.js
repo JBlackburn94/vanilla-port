@@ -4,7 +4,7 @@ const menuButtonAnimation = () => {
   const menu = document.getElementById("menu");
   let isRotated = false;
 
-  gsap.from(menu, { y: 100, duration: 0.6, delay: 0.3 });
+  gsap.from(menu, { y: 100, opacity: 0, duration: 0.6, delay: 0.3 });
 
   menu.addEventListener("click", () => {
     if (isRotated) {

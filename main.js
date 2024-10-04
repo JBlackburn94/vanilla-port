@@ -1,8 +1,8 @@
 import "./style.css";
 import { createIcons, Menu } from "lucide";
-import { gsap } from "gsap";
 import logoAnimation from "./animations/logoAnimation";
 import menuButtonAnimation from "./animations/menuButtonAnimation";
+import menuToggle from "./animations/menuToggle";
 
 createIcons({
   icons: {
@@ -13,6 +13,7 @@ createIcons({
 document.addEventListener("DOMContentLoaded", () => {
   logoAnimation();
   menuButtonAnimation();
+  menuToggle();
 
   const links = [
     {
